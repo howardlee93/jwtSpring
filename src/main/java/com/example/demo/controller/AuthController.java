@@ -6,12 +6,17 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
+import com.example.demo.security.jwt.JwtUtils;
 import com.example.demo.model.ERole;
 import com.example.demo.model.Role;
 import com.example.demo.model.User;
+import com.example.demo.payload.req.LoginRequest;
+import com.example.demo.payload.req.SignupRequest;
+import com.example.demo.payload.res.JwtResponse;
+import com.example.demo.payload.res.MessageResponse;
 import com.example.demo.repository.RoleRepository;
 import com.example.demo.repository.UserRepository;
-import com.example.demo.service.UserDetailsImpl;
+import com.example.demo.security.service.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

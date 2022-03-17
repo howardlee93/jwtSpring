@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.security.service;
 
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
@@ -11,8 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
-@Autowired
-UserRepository userRepository;
+        @Autowired
+        UserRepository userRepository;
 
         @Override
         @Transactional
