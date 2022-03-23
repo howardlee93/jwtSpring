@@ -2,10 +2,11 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.context.annotation.ComponentScan;
+
 
 @SpringBootApplication
+@ComponentScan("com.example.demo.repositories")
 public class SecurityTestApplication {
 
 	public static void main(String[] args) {
